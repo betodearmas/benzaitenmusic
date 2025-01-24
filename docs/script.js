@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /*POP-UP*/
 document.addEventListener("DOMContentLoaded", function() {
-    const popup = document.getElementById("popupShown");
+    const popup = document.getElementById("popup");
     const close = document.getElementById("close");
     const subscribe = document.getElementById("subscribe");
 
@@ -49,15 +49,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     document.addEventListener("DOMContentLoaded", function() {
-        const popup = document.getElementById("popupShown");
+        const popup = document.getElementById("popup");
         const close = document.getElementById("close");
     
         // Check if the popup has been shown in this session
-        if (!sessionStorage.getItem("popupShown")) {
+        if (!sessionStorage.getItem("popup")) {
             // Show the popup after 5 seconds
             setTimeout(() => {
                 popup.style.display = "flex";
-                sessionStorage.setItem("popupShown", "true");
+                sessionStorage.setItem("popup", "true");
             }, 3000);
         }
     
