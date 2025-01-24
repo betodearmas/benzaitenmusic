@@ -10,7 +10,6 @@ hamMenu.addEventListener('click', ()=>{
 })
 
 document.addEventListener('DOMContentLoaded', function() {
-    const hamMenu = document.querySelector('.ham-menu');
     const scrollThreshold = 450; // Change this value to your desired scroll amount
     
     function handleScroll() {
