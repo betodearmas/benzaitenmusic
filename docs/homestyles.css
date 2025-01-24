@@ -349,7 +349,7 @@ input[type="email"] {
     margin: 10px 0;
 }
 
-#subscribesubmit {
+#subscribe {
     padding: 10px 20px;
     background-color: rgb(176, 57, 79); 
     color: white;
@@ -359,7 +359,7 @@ input[type="email"] {
     border-top-left-radius: 5px;
     font-family: AmericanTypewriter;
 }
-#subscribesubmit:hover {
+#subscribe:hover {
     background-color: goldenrod;
 }
 
