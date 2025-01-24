@@ -27,22 +27,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /*POP-UP*/
 document.addEventListener("DOMContentLoaded", function() {
-    const popup = document.getElementById("popup");
+    const popup = document.getElementById("popupShown");
     const close = document.getElementById("close");
+    const subscribe = document.getElementById("subscribe");
 
     // Show the popup after 5 seconds
     setTimeout(() => {
         popup.style.display = "flex";
-    }, 5000);
+    }, 3000);
 
     // Close the popup
     close.addEventListener("click", () => {
         popup.style.display = "none";
     });
 
+        // Close the popup when hit Subscribe
+    subscribe.addEventListener("click", () => {
+        popup.style.display = "none";
+        alert ('Thank you');
+    });
+
 
     document.addEventListener("DOMContentLoaded", function() {
-        const popup = document.getElementById("popup");
+        const popup = document.getElementById("popupShown");
         const close = document.getElementById("close");
     
         // Check if the popup has been shown in this session
@@ -51,14 +58,9 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(() => {
                 popup.style.display = "flex";
                 sessionStorage.setItem("popupShown", "true");
-            }, 5000);
+            }, 3000);
         }
     
-        // Close the popup
-        close.addEventListener("click", () => {
-            popup.style.display = "none";
-        });
-    });
     
 
     /*POP-UP STOPS APPEARING AFTER ONE SESSION LOAD
