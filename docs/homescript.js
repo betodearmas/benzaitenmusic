@@ -30,32 +30,20 @@ document.addEventListener("DOMContentLoaded", function() {
     const popup = document.getElementById("popup");
     const close = document.getElementById("close");
 
-    // Show the popup after 5 seconds
-    setTimeout(() => {
-        popup.style.display = "flex";
-    }, 5000);
+    // Ensure the popup starts hidden
+    popup.style.display = "none";
+
+    // Show the popup after 5 seconds if it hasn't been shown already
+    if (!sessionStorage.getItem("popupShown")) {
+        setTimeout(() => {
+            popup.style.display = "flex";
+        }, 5000);
+        sessionStorage.setItem("popupShown", "true");
+    }
 
     // Close the popup
     close.addEventListener("click", () => {
         popup.style.display = "none";
-    });
-    
-
-    // POP-UP STOPS APPEARING AFTER ONE SESSION LOAD
-    document.addEventListener("DOMContentLoaded", () => {
-        if (!sessionStorage.getItem("popupShown")) {
-            // Show the pop-up
-            document.querySelector(".subscribe-popup").style.display = "block";
-            // Set the flag in sessionStorage
-            sessionStorage.setItem("popupShown", "true");
-        }
-    });
-    
-
-    // Close the popup
-    close.addEventListener("click", () => {
-        popup.style.display = "none";
-        });
     });
 
     // Handle form submission
@@ -63,19 +51,19 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
         const email = document.getElementById("email").value;
 
-        fetch("/subscribe", {
+        fetch("https://script.google.com/macros/s/AKfycbzA3YgAJEQtO2hoFEi7G5JOxHM26N_exjo6kkJMUBiB3UfaP9EELBCI5rxKD65RwkNQvg/exec", {  // Replace with your actual Google Apps Script URL
             method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ email: email })
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: "email=" + encodeURIComponent(email)
         })
-        .then(response => response.json())
+        .then(response => response.text())
         .then(data => {
-            alert(data.message);
+            alert(data.includes("Success") ? "Subscribed!" : "Error. Try again.");
+            document.getElementById("email").value = ""; // Clear input after submission
             popup.style.display = "none";
         })
         .catch(error => {
             console.error("Error:", error);
         });
     });
+});
