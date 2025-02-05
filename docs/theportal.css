@@ -243,6 +243,9 @@ h3 {
     font-style: italic;
 }
 
+.sampleclip {
+    position: center;
+}
 
 @media screen and (max-width: 600px) {
     body {
