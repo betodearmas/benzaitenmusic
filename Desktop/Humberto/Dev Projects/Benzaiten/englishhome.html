@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benzaiten - Underground Japanese Music</title>
     <link rel="stylesheet" href="homestyles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 </head>
 
 <!--HAM MENU-->
@@ -36,6 +39,10 @@
     <h2>reviewing underground Japanese bands</h2>
     </div>
 
+    <div class="KONNICHIWATYPHOONContainer">
+        <a href="konnichiwatyphoonenglish.html" class="KONNICHIWATYPHOONText">Konnichiwa Typhoon</a>
+    </div>
+
     <div class="THEPORTALContainer">
         <a href="theportalenglish.html" class="THEPORTALText">THE PORTAL</a>
     </div>
@@ -49,7 +56,7 @@
     </div>
 
     <div class="welcomeToBenzaitenContainer">
-        <a href="welcometobenzaitenenglish.html" class="welcomeToBenzaitenText">—-WELCOME TO BENZAITEN—-<br>弁財天</a>
+        <a href="welcometobenzaitenenglish.html" class="welcomeToBenzaitenText">—-Welcome to Benzaiten—-<br>弁財天</a>
     </div>
 
     <!--POP-UP-->
@@ -66,8 +73,14 @@
 
     
     <!--SCRIPT-->
-    <script src="homescript.js"></script>
-    
-</body>
-
+<script src="homescript.js"></script>
+<script>
+$ (document).ready(function() {   
+      if ($ .cookie("popup_1_2") == null) {
+           $('#modalUser').modal('show');
+      $ .cookie("popup_1_2", "2");
+   }
+ });
+</script>
+  </body>
 </html>

@@ -1,3 +1,40 @@
+/*KONNICHIWA TYPHOON*/
+.KONNICHIWATYPHOONContainer {
+    width: 100%;
+    display: flex;
+    height: auto; /* Adjust this height as needed */
+    padding-top: 50vh;
+    position: relative; /* Set the container to relative position */
+    background-image: url('konnichiwatyphoon.jpg');
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center center; /* Center the image */
+    overflow: hidden;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+}
+.KONNICHIWATYPHOONText {
+    position: absolute;
+    top: 30%; 
+    left: 30%;
+    color: white; 
+    font-size: 8vw; 
+    font-family: firstwave;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+    text-decoration: none;
+}
+.KONNICHIWATYPHOONText:hover {
+    transform: translate(10px, 10px); /* Move the text 10px to the right and 10px down */
+    color: rgb(255, 230, 0); /* Change text color on hover */
+    text-shadow: 5px 5px 5px rgb(255, 145, 0)
+}
+
+
 /*THE PORTAL*/
 .THEPORTALContainer {
     width: 100%;
@@ -178,6 +215,7 @@
     width: 50%;
     animation: spin 60s linear infinite;
     z-index: 1;
+    overflow: hide;
 }
 
 @keyframes spin {
@@ -199,6 +237,10 @@
 @font-face {
     font-family: 'FreedomChanges';
     src: url(freedomchanges.ttf);
+}
+@font-face {
+    font-family: 'firstwave';
+    src: url(firstwave.otf);
 }
 
 /*english home*/
@@ -417,5 +459,9 @@ input[type="email"] {
 .THEPORTALText {
     color: rgb(63, 41, 25);
     text-shadow: 5px 5px 5px rgb(26, 112, 36)
+}
+.KONNICHIWATYPHOONText {
+    color: rgb(255, 230, 0);
+    text-shadow: 5px 5px 5px rgb(255, 149, 0)
 }
 }
