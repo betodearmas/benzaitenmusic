@@ -4,15 +4,14 @@ body, html {
     height: 100%;
     background-color: blanchedalmond;
 }
-
 @font-face {
-    font-family: 'FreedomChanges';
-    src: url(freedomchanges.ttf);
+    font-family: firstwave;
+    src: url(firstwave.otf);
 }
 
 /* off-screen menu*/
 .off-screen-menu {
-    background-color: rgb(63, 41, 25);
+    background: rgb(255, 230, 0); /* Fallback color */
     height: 100vh;
     width: 100%;
     max-width: 450px;
@@ -32,10 +31,10 @@ body, html {
     list-style-type: none; /* Remove bullet points */
 }
 .menu-list a:hover {
-    color:  rgb(26, 112, 36);
+    color:  rgb(255, 0, 0);
 }
 .menu-list a {
-    color: antiquewhite;
+    color: rgb(250, 129, 0);
     font-family: AmericanTypewriter;
     text-decoration: none;
 }
@@ -60,7 +59,7 @@ nav {
 .ham-menu span {
     height: 5px; 
     width: 100%;
-    background-color:rgb(26, 112, 36);
+    background-color:rgb(250, 129, 0);
     border-radius: 25px; 
     position: absolute; 
     top: 50%; 
@@ -97,7 +96,7 @@ nav {
     display: flex;
     height: 100vh; /* Full viewport height */
     position: relative; /* Set the container to relative position */
-    background-image: url('THEPORTAL.jpg');
+    background-image: url('konnichiwatyphoon.jpg');
     background-size: cover; /* Ensure the image covers the container */
     background-position: center center; /* Center the image */
     overflow: hidden;
@@ -110,7 +109,7 @@ h1 {
     position: absolute;
     color: white; 
     font-size: clamp(5vw,5vw,7vw);
-    font-family: FreedomChanges;
+    font-family: firstwave;
     font-weight: 600;
     text-align: center center;
     justify-content: center center;
