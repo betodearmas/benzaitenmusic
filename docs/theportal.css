@@ -258,10 +258,6 @@ h3 {
     body {
       font-size: 14px; /* or any minimum size you prefer */
 }
-    @font-face {
-    font-family: 'FreedomChanges';
-    src: url(freedomchanges.ttf);
-}
 
     h1 {
     position: absolute;
