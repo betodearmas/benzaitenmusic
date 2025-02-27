@@ -257,6 +257,10 @@ h3 {
     body {
       font-size: 14px; /* or any minimum size you prefer */
 }
+    @font-face {
+    font-family: firstwave;
+    src: url(firstwave.otf);
+}
 
     h1 {
     position: absolute;
@@ -264,7 +268,7 @@ h3 {
     left: 15%;
     color: white; 
     font-size: clamp(5vw,7vw,7vw);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: firstwave;
     font-weight: 600;
     text-align: center center;
     justify-content: center center;
