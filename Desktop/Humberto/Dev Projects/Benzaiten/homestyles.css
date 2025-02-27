@@ -5,7 +5,7 @@
     height: auto; /* Adjust this height as needed */
     padding-top: 50vh;
     position: relative; /* Set the container to relative position */
-    background-image: url('konnichiwatyphoon.jpg');
+    background-image: url('KT.jpg');
     background-size: cover; /* Ensure the image covers the container */
     background-position: center center; /* Center the image */
     overflow: hidden;

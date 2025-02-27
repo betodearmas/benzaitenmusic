@@ -23,7 +23,6 @@ body, html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 3rem;
     transition: 0.4s ease;
     z-index: 999;
 }
@@ -37,6 +36,7 @@ body, html {
     color: rgb(250, 129, 0);
     font-family: AmericanTypewriter;
     text-decoration: none;
+    font-size: clamp(16px, 7vw, 50px);
 }
 .off-screen-menu.active {
     right: 0;
@@ -96,7 +96,7 @@ nav {
     display: flex;
     height: 100vh; /* Full viewport height */
     position: relative; /* Set the container to relative position */
-    background-image: url('konnichiwatyphoon.jpg');
+    background-image: url('KT.jpg');
     background-size: cover; /* Ensure the image covers the container */
     background-position: center center; /* Center the image */
     overflow: hidden;
@@ -263,8 +263,8 @@ h3 {
     top: 26%;
     left: 15%;
     color: white; 
-    font-size: clamp(5vw,7vw,7vw);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10vw;
+    font-family: firstwave;
     font-weight: 600;
     text-align: center center;
     justify-content: center center;
@@ -289,7 +289,7 @@ h3 {
     line-height: 28px;
 }
 .off-screen-menu {
-    background-color:  rgb(63, 41, 25);
+    background: rgb(255, 230, 0); /* Fallback color */
     height: 100vh;
     width: 100%;
     max-width: 350px;
@@ -320,7 +320,7 @@ h3 {
 .ham-menu span {
 height: 3px; 
 width: 100%;
-background-color:  rgb(26, 112, 36);
+background-color:rgb(250, 129, 0);
 border-radius: 25px; 
 position: absolute; 
 top: 50%; 
