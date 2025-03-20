@@ -1,3 +1,40 @@
+/*NORTHERN PELE*/
+.NORTHERNPELEContainer {
+    width: 100%;
+    display: flex;
+    height: auto; /* Adjust this height as needed */
+    padding-top: 50vh;
+    position: relative; /* Set the container to relative position */
+    background-image: url('NorthernPele.jpeg');
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center center; /* Center the image */
+    overflow: hidden;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+}
+.NORTHERNPELEText {
+    position: absolute;
+    top: 30%; 
+    left: 15%;
+    color: white; 
+    font-size: 6vw; 
+    font-family: theshire;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+    text-decoration: none;
+}
+.NORTHERNPELEText:hover {
+    transform: translate(10px, 10px); /* Move the text 10px to the right and 10px down */
+    color: rgb(0, 171, 214); /* Change text color on hover */
+    text-shadow: 5px 5px 5px rgb(255, 255, 255)
+}
+
+
 /*KONNICHIWA TYPHOON*/
 .KONNICHIWATYPHOONContainer {
     width: 100%;
@@ -241,6 +278,10 @@
 @font-face {
     font-family: 'firstwave';
     src: url(firstwave.otf);
+}
+@font-face {
+    font-family: 'theshire';
+    src: url(theshire.ttf);
 }
 
 /*english home*/
