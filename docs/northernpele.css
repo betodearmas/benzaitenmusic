@@ -96,7 +96,7 @@ nav {
     display: flex;
     height: 100vh; /* Full viewport height */
     position: relative; /* Set the container to relative position */
-    background-image: url('NorthernPele.jpeg');
+    background-image: url('northernpele.jpeg');
     background-size: cover; /* Ensure the image covers the container */
     background-position: center center; /* Center the image */
     overflow: hidden;
