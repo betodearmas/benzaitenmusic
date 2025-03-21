@@ -505,4 +505,8 @@ input[type="email"] {
     color: rgb(255, 230, 0);
     text-shadow: 5px 5px 5px rgb(255, 149, 0)
 }
+.NORTHERNPELEText {
+color: rgb(0, 171, 214);
+text-shadow: 5px 5px 5px rgb(255, 255, 255)
+}
 }
