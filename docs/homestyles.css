@@ -551,4 +551,8 @@ input[type="email"] {
     color: rgb(0, 171, 214);
     text-shadow: 5px 5px 5px rgb(255, 255, 255)
 }
+.MODERNOLDText {
+    color:rgb(176, 34, 61);
+    text-shadow: 5px 5px 5px rgb(62, 129,176);
+}
 }
