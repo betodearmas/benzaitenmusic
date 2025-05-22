@@ -1,11 +1,11 @@
-/*MODERN OLD*/
+/*BDB CONTAINER*/
 .BDBContainer {
     width: 100%;
     display: flex;
     height: auto; /* Adjust this height as needed */
     padding-top: 50vh;
     position: relative; /* Set the container to relative position */
-    background-image: url('BDB.JPG');
+    background-image: url('BDB.jpg');
     background-size: cover; /* Ensure the image covers the container */
     background-position: center center; /* Center the image */
     overflow: hidden;
