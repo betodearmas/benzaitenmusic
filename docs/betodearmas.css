@@ -166,7 +166,7 @@ a:hover {
 
 
 
-/* Optional: space out the icons */
+/* space out the icons */
 .social-icons a {
   margin: 0 0.5rem;
   color: inherit;
@@ -234,33 +234,42 @@ list-style: none;
   width: auto;
   background-color: rgb(0, 0, 0);
 }
+#music-videos-title-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 80vw;
+  border-bottom: 2px solid white;
+  text-align: center;
+  margin-top: 8vh;
+  font-size: 3rem;
+}
+
 .carousel {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 .carousel::-webkit-scrollbar {
-      display: none; /* hide scrollbar */
+  display: none; /* hide scrollbar */
 }
 .slide {
-      flex: 0 0 50vw;
-      scroll-snap-align: center;
-      overflow: hidden;
-      padding-top: 10vh;
-      padding-left: 2.5vw;
-      padding-right: 2.5vw;
+  flex: 0 0 50vw;
+  scroll-snap-align: center;
+  overflow: hidden;
+  padding-top: 10vh;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
 }
 iframe {
-      width: 100%;
-      aspect-ratio: 16/9;
-      border: none;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
 }
-
-
-
 footer{
   text-align: center;
+  padding-top: 8vh;
   padding-bottom: 2vh;
   color: brown;
 }
@@ -303,10 +312,29 @@ footer{
   display: inline-block;
   width: 90vw;
 }
-#live-videos-section{
-  display: none;
+#music-videos-section {
+height: 35vh;
+}
+#music-videos-title-container {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 5vh;
+}
+.slide {
+  flex: 0 0 75vw;
+  scroll-snap-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  padding-top: 5vh;
+  padding-left: 5vw;
+}
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none; 
 }
 footer {
-margin-top: 3vh;
+  margin-top: 3vh;
+  font-size: 11px;
 }
 }
